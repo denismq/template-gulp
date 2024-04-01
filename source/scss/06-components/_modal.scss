@@ -1,0 +1,164 @@
+.c-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  transition: all 0.5s;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    .c-modal__content {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    max-width: 430px;
+    width: 100%;
+    background: white;
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    &--credit {
+      max-width: 650px;
+    }
+    @media (max-width: 992px) {
+      width: 90%;
+    }
+    &--transparent {
+      background: transparent;
+    }
+  }
+  &__header {
+  }
+  &__body {
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    .icon {
+      font-size: 180px;
+      color: $white;
+      display: block;
+    }
+    .icon-update {
+      animation: rotating 2s linear infinite;
+    }
+  }
+  &__body-title {
+    @include font-title($proxima-nova-bold, 20px, $yanbal-color);
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    &--border {
+      border-bottom: 1px solid $yanbal-color;
+    }
+    &--center {
+      text-align: center;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+    &--white {
+      color: $white;
+      font-size: 28px;
+    }
+  }
+  &__body-subtitle {
+    @include font-title($proxima-nova-bold, 16px, #515151);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $yanbal-color;
+  }
+  &__body-description {
+    @include font-title($proxima-nova-medium, 14px, $black-color);
+    margin-bottom: 32px;
+  }
+  &__body-detail {
+    max-height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    h3 {
+      font-size: 18px;
+      font-family: 'proxima_nova_amedium';
+    }
+    p {
+      margin-bottom: 20px;
+      font-family: 'proxima_nova_amedium';
+      font-size: 14px;
+    }
+  }
+  &__body-video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    background-image: url('../images/preloader.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 200px;
+    iframe,
+    object,
+    embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__body-image {
+    img {
+      margin: 0 auto;
+    }
+  }
+  &__btn-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 32px;
+    color: $yanbal-color;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  &__button {
+    .button {
+      max-width: 340px;
+      width: 100%;
+    }
+  }
+  &__buttons {
+    .button {
+      width: 120px;
+      height: 30px;
+      line-height: 30px;
+      margin: 5px 15px;
+    }
+  }
+}
+
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

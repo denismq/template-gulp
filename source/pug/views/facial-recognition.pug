@@ -1,0 +1,30 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps.steps--identity
+                        li.steps__item.is-active
+                            span.steps__text Validación SMS
+                        li.steps__item
+                            span.steps__text Reconocimiento Facial
+                .container
+                    .detail-steps.detail-steps--no-border
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange Reconocimiento Facial
+                        .row.identity
+                            .col-sm-6.col-md-6
+                                p.identity__text Ahora por seguridad usaremos la cámara de tu dispositivo para comprobar que eres tú.
+                                .identity__image.identity__image--mobile
+                                    img(src="images/img-facial.png")
+                                .identity__button
+                                    a(href="facial-recognition-test.html" class="button button--orange") Empecemos
+                            .col-sm-6.col-md-6
+                                .identity__image.identity__image--desktop
+                                    img(src="images/img-facial.png")

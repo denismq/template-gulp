@@ -1,0 +1,87 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps.steps--identity
+                        li.steps__item.is-active
+                            span.steps__text Preguntas Validación
+                        li.steps__item
+                            span.steps__text Validación SMS
+                .container
+                    .detail-steps.detail-steps--no-border
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange
+                                        | Preguntas de Validación
+                        .row
+                            .col-md-12
+                                ol.validator
+                                    li.validator__item
+                                        h2.validator__question-title ¿A cuántos años plazo financio su crédito de vivienda en la COOPERATIVA XXXX?
+                                        .validator__answer
+                                            ul.custom-input
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-1" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-1") No tengo crédito
+                                                    .check
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-2" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-2") 1 a 7 años
+                                                    .check
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-3" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-3") 8 a 15 años
+                                                    .check
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-4" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-4") 16 o mas años
+                                                    .check
+                                    li.validator__item
+                                        h2.validator__question-title ¿En cuántos créditos usted consta actualmente como garante en el BANCO XXXX?
+                                        .validator__answer
+                                            ul.custom-input
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-5" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-5") 1
+                                                    .check
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-6" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-6") 2
+                                                    .check
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-7" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-7") 3 o más
+                                                    .check
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-8" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-8") Ninguna
+                                                    .check
+                                    li.validator__item
+                                        h2.validator__question-title ¿Cuántos créditos mantiene actualmente en la COOPERATIVA XXXX (no incluye tarjeta de crédito)?
+                                        .validator__answer
+                                            ul.custom-input
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-9" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-9") Ninguna
+                                                    .check
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-10" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-10") 1
+                                                    .check
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-11" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-11") 2
+                                                    .check
+                                                li.custom-input__item
+                                                    input(type="radio" id="option-radio-12" name="option-radio")
+                                                    label(class="custom-input__label" for="option-radio-12") 3 o más
+                                                    .check
+                            .col-md-12
+                                .content-button
+                                    a(href="#" class="button button--orange") Confirmar  

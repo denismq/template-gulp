@@ -1,0 +1,52 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps
+                        li.steps__item.is-active
+                            span.steps__text Recomendante
+                        li.steps__item
+                            span.steps__text Datos Personales
+                        li.steps__item
+                            span.steps__text Contacto
+                        li.steps__item
+                            span.steps__text Dirección
+                        li.steps__item
+                            span.steps__text Vista Preliminar
+                        li.steps__item
+                            span.steps__text Incorporación
+                .container
+                    .detail-steps
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange 
+                                        i.icon.icon-style-advisor
+                                        | Recomendante
+                        .row
+                            .col-md-12
+                                .c-form
+                                    label.c-form__description ¿Alguna consultora te recomendó a Yanbal?
+                                    .c-form__row
+                                        .c-form__inner
+                                            input(type="text" id="" name="" placeholder="Codigo / Nombre Consultora" class="c-form__input c-form__input--icon-background")
+                                            i.icon.icon-search
+                                    span.c-form__span.c-form__span--text-size Si no conoces una consultora, deja el espacio en blanco y sigamos.                                            
+                                    .c-form__button.c-form__button--margin-top
+                                        span.terms-conditions Al continuar Acepta la 
+                                            a(href="javascript:void(0);" class="terms-conditions__link js-modal") Ley de Protección de Datos.
+                                        a(href="personal-information.html" class="button button--orange") Sigamos
+    .c-modal
+        .c-modal__content
+            .c-modal__btn-close
+                i.icon-close
+            .c-modal__body.text-center
+                h2.c-modal__body-title.c-modal__body-title--center Ley de Protección de Datos
+                p.c-modal__body-description.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.                             
+                

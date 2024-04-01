@@ -1,0 +1,70 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps
+                        li.steps__item.is-active
+                            span.steps__text Recomendante
+                        li.steps__item
+                            span.steps__text Datos Personales
+                        li.steps__item
+                            span.steps__text Contacto
+                        li.steps__item
+                            span.steps__text Dirección
+                        li.steps__item
+                            span.steps__text Vista Preliminar
+                        li.steps__item
+                            span.steps__text Incorporación
+                .container
+                    .detail-steps
+                        a(class="btn-back" href="contact.html") Volver
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange
+                                        i.icon.icon-home
+                                        | Dirección                                                
+                        .row
+                            .col-md-12
+                                .c-form
+                                    label.c-form__description Por favor completa los campos con tu dirección exacta:
+                                    .c-form__row
+                                        .row
+                                            .col-md-6
+                                                .c-form__row
+                                                    .c-form__select.c-form__select--width
+                                                        i.icon-arrow-down                              
+                                                        select(id="" class="c-form__input c-form__input--select")
+                                                            option(value="") Tipo de Calle / Av.
+                                            .col-md-6
+                                                .c-form__row
+                                                    input(type="text" id="" name="" class="c-form__input c-form__input--value padding-label")
+                                                    label.focus-label Dirección
+                                                    span.c-form__span Ejemplo: abc@abc.com
+                                            .col-md-6
+                                                .c-form__row
+                                                    .c-form__select.c-form__select--width
+                                                        i.icon-arrow-down                                         
+                                                        select(id="" class="c-form__input c-form__input--select")
+                                                            option(value="") Provincia
+                                                            option(value="lima") Lima
+                                            .col-md-6
+                                                .c-form__row
+                                                    .c-form__select.c-form__select--width
+                                                        i.icon-arrow-down                   
+                                                        select(id="" class="c-form__input c-form__input--select")
+                                                            option(value="") Cantón/Barrio/Parroquia
+                                            .col-md-6
+                                                .c-form__row
+                                                    input(type="text" id="" name="" class="c-form__input c-form__input--value padding-label")
+                                                    label.focus-label Referencia
+                                                    span.c-form__span Ejemplo: entre calle 123 y calle 456                                                                                                                                                        
+                                            .col-md-12
+                                                .c-form__button.c-form__button--margin-top
+                                                    a(href="preview.html" class="button button--orange") Sigamos
+                

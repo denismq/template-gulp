@@ -1,0 +1,167 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps
+                        li.steps__item.is-active
+                            span.steps__text Recomendante
+                        li.steps__item
+                            span.steps__text Datos Personales
+                        li.steps__item
+                            span.steps__text Contacto
+                        li.steps__item
+                            span.steps__text Dirección
+                        li.steps__item
+                            span.steps__text Vista Preliminar
+                        li.steps__item
+                            span.steps__text Incorporación
+                .container
+                    .detail-steps
+                        a(class="btn-back" href="recommended.html") Volver
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange 
+                                        i.icon.icon-profile
+                                        | Datos Personales
+                        .row
+                            .col-md-12
+                                .error-messages
+                                    .error-messages__text Por favor corrija los campos resaltados en rojo
+                                    .error-messages__text El número de documento ya se encuentra registrado en nuestro sistema (I100).
+                                    .error-messages__text El correo ingresado ya se encuentra registrado.
+                        .row
+                            .col-md-12
+                                form
+                                    .c-form
+                                        label.c-form__description Por favor indicanos tu tipo de documento de identidad:
+                                        .c-form__row.no-margin
+                                            ul.custom-input.custom-input--border
+                                                .row
+                                                    .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                                        li.custom-input__item.custom-input__item--selection.js-selection(data-option="cedula")
+                                                            input(type="radio" id="option-radio-1" name="option-radio")
+                                                            label(class="custom-input__label" for="option-radio-1") Cédula
+                                                            .check
+                                                            .arrow-container
+                                                    .col-xs-6.col-sm-6.col-md-3.col-lg-3
+                                                        li.custom-input__item.custom-input__item--selection.js-selection(data-option="cedula-extranjeria")
+                                                            input(type="radio" id="option-radio-2" name="option-radio")
+                                                            label(class="custom-input__label" for="option-radio-2") Cédula de Extranjería
+                                                            .check
+                                                            .arrow-container
+                                        .c-form__document-type
+                                            .c-form__document-item(data-document="cedula")
+                                                .row
+                                                    .col-md-6
+                                                        .c-form__row
+                                                            input(type="text" id="" name="" class="c-form__input c-form__input--width c-form__input--value padding-label" maxlength="10")
+                                                            label.focus-label Numero de Documento
+                                                            span.c-form__span Ejemplo: 0987654321
+                                                            .alert-box
+                                                                .alert-box__inner
+                                                                    span.alert-box__icon.alert-box__icon--error
+                                                                        i.icon-close
+                                                                    span.alert-box__icon.alert-box__icon--valid
+                                                                        i.icon-check
+                                                                    span.alert-box__icon.alert-box__icon--loading
+                                                                        i.icon-update
+                                                    .col-md-6
+                                                        .c-form__row
+                                                            input(type="text" id="" name="" class="c-form__input c-form__input--width c-form__input--value padding-label" maxlength="10")
+                                                            label.focus-label Codigo Dactilar
+                                                            i.icon.icon-ask.js-modal
+                                                            span.c-form__span Ejemplo: 1234567890                                                            
+                                                            .alert-box
+                                                                .alert-box__inner
+                                                                    span.alert-box__icon.alert-box__icon--error
+                                                                        i.icon-close
+                                                                    span.alert-box__icon.alert-box__icon--valid
+                                                                        i.icon-check
+                                                                    span.alert-box__icon.alert-box__icon--loading
+                                                                        i.icon-update                                                                                                                                     
+                                            .c-form__document-item(data-document="cedula-extranjeria")
+                                                .row
+                                                    .col-md-12
+                                                        .c-form__row.c-form__row--num-doc
+                                                            input(type="text" id="" name="" class="c-form__input c-form__input--width c-form__input--value padding-label")
+                                                            label.focus-label Número de Documento
+                                                .row
+                                                    .col-md-6
+                                                        h3.c-form__title Nombres Completos
+                                                        .c-form__row
+                                                            input(type="text" id="" name="" class="c-form__input c-form__input--width c-form__input--value padding-label")
+                                                            label.focus-label Nombres
+                                                        .c-form__row
+                                                            input(type="text" id="" name="" class="c-form__input c-form__input--width c-form__input--value padding-label")
+                                                            label.focus-label Primer Apellido
+                                                        .c-form__row
+                                                            input(type="text" id="" name="" class="c-form__input c-form__input--width c-form__input--value padding-label")
+                                                            label.focus-label Segundo Apellido (opcional)
+                                                    .col-md-6
+                                                        h3.c-form__title Género
+                                                        .c-form__row
+                                                            ul.custom-input
+                                                                .row
+                                                                    .col-xs-6.col-md-6
+                                                                        li.custom-input__item
+                                                                            input(type="radio" id="male" name="option-radio")
+                                                                            label(class="custom-input__label" for="male") Hombre
+                                                                            .check
+                                                                    .col-xs-6.col-md-6
+                                                                        li.custom-input__item
+                                                                            input(type="radio" id="female" name="option-radio")
+                                                                            label(class="custom-input__label" for="female") Mujer
+                                                                            .check
+                                                        .c-form__row.c-form__row--pt-57
+                                                            h3.c-form__title Fecha de Nacimiento
+                                                            .row
+                                                                .col-xs-3.col-md-3.no-padding-right
+                                                                    .c-form__select
+                                                                        i.icon-arrow-down
+                                                                        select(id="" class="c-form__input c-form__input--select")
+                                                                            option(value) Dia
+                                                                            option(value="1") 1
+                                                                            option(value="2") 2
+                                                                .col-xs-6.col-md-6
+                                                                    .c-form__select
+                                                                        i.icon-arrow-down
+                                                                        select(id="" class="c-form__input c-form__input--select")
+                                                                            option(value) Mes
+                                                                            option(value) Enero
+                                                                .col-xs-3.col-md-3.no-padding-left
+                                                                    .c-form__select
+                                                                        i.icon-arrow-down
+                                                                        select(id="" class="c-form__input c-form__input--select")
+                                                                            option(value) Año
+                                                                            option(value="1900") 1900
+                                        .c-form__button.c-form__button--margin-top.c-form__button--next
+                                            a(href="contact.html" class="button button--orange") Sigamos
+    .c-modal
+        .c-modal__content
+            .c-modal__btn-close
+                i.icon-close
+            .c-modal__body.text-center
+                h2.c-modal__body-title.c-modal__body-title--center código dactilar
+                p.c-modal__body-description.
+                    Al reverso de tu cédula de identidad podrás ubicar tu código dactilar:
+                .c-modal__body-image
+                    img(src="images/img-code.png", class="")
+
+    .prueba-mensajes
+        .alert-box
+            .alert-box__inner
+                span.alert-box__icon.alert-box__icon--error
+                    i.icon-close
+                span.alert-box__icon.alert-box__icon--valid
+                    i.icon-check
+                span.alert-box__icon.alert-box__icon--loading
+                    i.icon-update
+        button.prueba-error Error
+        button.prueba-valid Valid
+        button.prueba-loading Loading

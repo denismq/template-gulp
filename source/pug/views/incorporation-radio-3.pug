@@ -1,0 +1,103 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps
+                        li.steps__item.is-active
+                            span.steps__text Recomendante
+                        li.steps__item
+                            span.steps__text Datos Personales
+                        li.steps__item
+                            span.steps__text Contacto
+                        li.steps__item
+                            span.steps__text Dirección
+                        li.steps__item
+                            span.steps__text Vista Preliminar
+                        li.steps__item
+                            span.steps__text Incorporación
+                .container
+                    .detail-steps
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange 
+                                        i.icon.icon-check
+                                        | Incorporación
+                        .row
+                            .col-md-12
+                                .incorporation
+                                    .row
+                                        .col-md-12
+                                            .incorporation__header
+                                                p.incorporation__description
+                                                    | ¡Excelente, <span>María José</span> ahora eres una consultora
+                                                    | Yanbal!
+                                                p.incorporation__description Tu código de consultora es: <strong class="code">20202020</strong>
+                                                p.incorporation__description Recuerda comunicarte con tu Directora asignada:
+                                        .col-md-12
+                                            .incorporation__body
+                                                .row
+                                                    .col-md-6.col-md-push-6
+                                                        h3.incorporation__name
+                                                            | María de los santos campos reategui
+                                                            span Directora
+                                                    .col-md-6.col-md-pull-6
+                                                        .incorporation__avatar
+                                                            .incorporation__image
+                                                                img(src="images/avatar.png", class="")
+                                                .row.margin-bottom
+                                                    .col-md-3
+                                                        span.incorporation__text Telefono:
+                                                    .col-xs-5.col-md-3.no-padding-right
+                                                        span.incorporation__text.incorporation__text--bold 09 92764874
+                                                    .col-xs-4.col-md-6
+                                                        .incorporation__social
+                                                            a(class="button button--outlined ") Abrir whatsapp
+                                                .row.margin-bottom
+                                                    .col-md-3
+                                                        span.incorporation__text Ubicación:
+                                                    .col-md-9
+                                                        span.incorporation__text.incorporation__text--bold Pichincha, Quito
+                                                .row
+                                                    .col-md-3
+                                                        span.incorporation__text Sobre mí:
+                                                    .col-md-9
+                                                        span.incorporation__text.incorporation__text--bold
+                                                            | Nunca estarás sola, tendrás todo mi apoyo: formarás parte del
+                                                            | equipo de una gran empresaria independiente Yanbal que te apoyará y guiará desde el primer día.
+                                        .col-md-12
+                                            .incorporation__footer
+                                                p.incorporation__description <strong>crédito yanbal</strong>
+                                                    i.icon-ask.js-modal
+                                                p.incorporation__description.incorporation__description--text-left Tienes un crédito preaprobado para utlizarlo en tu primer pedido y alcanzar tus metas. ¿Deseas validarlo en línea ahora mismo?
+                                                ul.custom-input
+                                                    li.custom-input__item
+                                                        input(type="radio" id="option-radio-1" name="option-radio")
+                                                        label(class="custom-input__label" for="option-radio-1") Sí
+                                                        .check
+                                                    li.custom-input__item
+                                                        input(type="radio" id="option-radio-2" name="option-radio")
+                                                        label(class="custom-input__label" for="option-radio-2") Lo veré más adelante
+                                                        .check
+                                                    li.custom-input__item
+                                                        input(type="radio" id="option-radio-3" name="option-radio" checked)
+                                                        label(class="custom-input__label" for="option-radio-3") No gracias
+                                                        .check
+                                                p.incorporation__description.incorporation__description--text-left
+                                                    | Recibirás un correo con más información, revisa tu bandeja de entrada.
+                                        .col-md-12
+                                            .content-button
+                                                a(href="#" class="button button--orange") Finalizar
+    .c-modal
+        .c-modal__content
+            .c-modal__btn-close
+                i.icon-close
+            .c-modal__body.text-center
+                h2.c-modal__body-title.c-modal__body-title--center ¿QUE ES UN CRÉDITO YANBAL?
+                p.c-modal__body-description.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

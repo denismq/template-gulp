@@ -1,0 +1,75 @@
+.c-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    input[type='checkbox'],
+    input[type='radio'] {
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+    &--checkbox {
+      input[type='checkbox']{
+        &:checked + .c-control__shape {
+          background-color: $blue;
+          &::after{
+            transform: translate(-50%, -50%) scale(1) rotate(45deg);
+          }
+        }    
+      }
+      .c-control__shape{
+        &::after{
+          content: '';
+          width: 6px;
+          height: 11px;
+          border-style: solid;
+          border-color: $white;
+          border-width: 0px 2px 2px 0px;
+          transform: translate(-50%, -50%) scale(0) rotate(45deg);
+        }
+      }
+    }
+    &--radio {
+      input[type='radio']{
+        &:checked + .c-control__shape {
+          //background-color: $blue;
+          &::after{
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }    
+      }
+      .c-control__shape{
+        border-radius: 50%;
+        &::after{
+          content: '';
+          width: 10px;
+          height: 10px;
+          background-color: #ea4d94;
+          border-radius: 50%;
+          transform: translate(-50%, -50%) scale(0);
+        }      
+      }
+    }
+    &__shape{
+      width: 20px;
+      height: 20px;
+      border: 1px solid $gray;
+      flex-shrink: 0;
+      margin-right: 15px;
+      position: relative;
+      &::after{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: all 0.3s;
+      }
+    }
+    &__text{
+      font-size: 14px;
+    }
+  }

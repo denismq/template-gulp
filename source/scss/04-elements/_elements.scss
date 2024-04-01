@@ -1,0 +1,41 @@
+body {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a,a:hover,a:focus{
+  text-decoration: none;
+  outline: none;
+}
+a:focus{
+  color: $white;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+button {
+  background:transparent;
+}
+
+input, button, select{
+  outline: none;
+  border: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}

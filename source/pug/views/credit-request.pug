@@ -1,0 +1,32 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        .credit-request
+            header.headline
+                h1.headline__title.headline__title--orange CONFIRME LA SOLICITUD DE CRÉDITO DE SU CONSULTORA INDEPENDIENTE
+            .credit-request__body
+                p.credit-request__name María del rosario,
+                p.credit-request__description.credit-request__description--center Hemos recibido la solicitud de Crédito de su Consultora Independiente.
+                p.credit-request__description
+                    span Nombre :
+                    | María de los Santos  Campos Reategui
+                p.credit-request__description
+                    span Código :
+                    | 20202020
+                p.credit-request__description Por favor confirmar la aprobación de su Crédito.
+                p.credit-request__description Considera de debes tener cupos disponibles para que este Crédito sea aprobado.
+            .credit-request__buttons
+                a(href="#" class="button button--outlined") No Aprobar
+                a(href="#" class="button button--orange") Aprobar
+    .c-modal
+        .c-modal__content
+            .c-modal__body.text-center
+                //h2.c-modal__body-title.c-modal__body-title--center ups...
+                p.c-modal__body-description.
+                    ¿Estás segura que no quieres aprobar este Crédito?
+                .c-modal__buttons
+                    a(href="#" class="button button--outlined") No
+                    a(href="#" class="button button--orange") Si

@@ -1,0 +1,51 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps.steps--identity
+                        li.steps__item.is-active
+                            span.steps__text Preguntas Validación
+                        li.steps__item
+                            span.steps__text Validación SMS
+                .container
+                    .detail-steps.detail-steps--no-border
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange Validación sms
+                        .row.identity
+                            .col-md-12
+                                p.identity__text.identity__text--size.text-center Te hemos enviado un SMS, por favor escribe el código:
+                                form
+                                    .code
+                                        .code__item
+                                            input(type="text" id="" name="" class="code__input" maxlength="1")
+                                        .code__item
+                                            input(type="text" id="" name="" class="code__input" maxlength="1")
+                                        .code__item
+                                            input(type="text" id="" name="" class="code__input" maxlength="1")
+                                        .code__item
+                                            input(type="text" id="" name="" class="code__input" maxlength="1")
+                        .row
+                            .countdown
+                                i.icon-clock
+                                span.countdown__hour 01:59
+                        .row
+                            .col-md-12
+                                .identity__button.text-center
+                                    a(href="#" class="button button--orange") Reenviar SMS
+    .c-modal.active
+        .c-modal__content
+            .c-modal__body.text-center
+                h2.c-modal__body-title.c-modal__body-title--center ups...
+                p.c-modal__body-description.
+                    3 intentos incorrectos
+                p.c-modal__body-description.
+                    Por favor comunicate con tu Directora para terminar tu proceso de crédito.                    
+                .c-modal__button
+                    a(href="#" class="button button--orange") Ir a Yanbal.com

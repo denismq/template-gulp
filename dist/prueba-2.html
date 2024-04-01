@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" type="image/png" href="images/favicon/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--link(rel='stylesheet', href='css/index.css')-->
+    <title>Incorporación</title>
+  </head>
+  <body>
+    <!--main-->
+    <div class="content">
+      <form class="js-form-validate" method="get" action="">
+        <fieldset>
+          <div class="field-group">
+            <label class="label" for="nombre">Nombre:</label>
+            <div class="field">
+              <input id="nombre" type="text" name="nombre" data-rule-required="true" data-msg="Ingrese su nombre">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="apellido-paterno">Apellido paterno:</label>
+            <div class="field">
+              <input id="apellido-paterno" type="text" name="apellido-paterno" data-rule-required="true" data-msg="Ingrese su apellido paterno">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="email">Email:</label>
+            <div class="field">
+              <input id="email" type="email" name="email" data-rule-required="true" data-rule-email="true" data-rule-minlength="7" data-msg="Ingrese su email" data-msg-email="Ingrese un email válido" data-msg-minlength="Ingrese al menos siete caracteres">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="email-confirmacion">Confirmaci&oacute;n Email:</label>
+            <div class="field">
+              <input id="email-confirmacion" type="email-confirmacion" name="email-confirmacion" data-rule-required="true" data-rule-equalto="#email" data-rule-email="true" data-rule-minlength="7" data-msg="Reingrese su email" data-msg-equalto="No coinciden los emails" data-msg-email="Ingrese un email válido" data-msg-minlength="Ingrese al menos siete caracteres">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="rut">RUT:</label>
+            <div class="field">
+              <input id="rut" type="text" name="rut" data-rule-required="true" data-rule-rut="true" data-msg="Ingrese su RUT" data-msg-rut="Ingrese un RUT válido">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="rut-or-mail">RUT o Email:</label>
+            <div class="field">
+              <input id="rut-or-mail" type="text" name="rut-or-mail" data-rule-required="true" data-rule-rutmail="true" data-msg="Ingrese su RUT o email" data-msg-rutmail="Ingrese un RUT o email válido">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="password">Password:</label>
+            <div class="field">
+              <input id="password" type="password" name="password" maxlength="20" data-rule-required="true" data-rule-minlength="6" data-rule-maxlength="20" data-rule-alphanumeric="true" data-msg="Ingrese su clave" data-msg-minlength="Ingrese al menos seis caracteres" data-msg-maxlength="Ingrese a lo más 20 caracteres" data-msg-alphanumeric="Ingrese sólo número o letras">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="password-confirmacion">Confirmaci&oacute;n Password:</label>
+            <div class="field">
+              <input id="password-confirmacion" type="password" name="password-confirmacion" maxlength="20" data-rule-required="true" data-rule-equalto="#password" data-rule-minlength="6" data-rule-maxlength="20" data-rule-alphanumeric="true" data-msg="Reingrese su clave" data-msg-equalto="No coinciden los passwords" data-msg-minlength="Ingrese al menos seis caracteres" data-msg-maxlength="Ingrese a lo más 20 caracteres" data-msg-alphanumeric="Ingrese sólo número o letras">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="fecha">Fecha:</label>
+            <div class="field">
+              <input id="fecha" type="date" name="fecha" data-rule-required="true" min="1940-01-01" data-msg="Seleccione una fecha">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="edad">Edad:</label>
+            <div class="field">
+              <input id="edad" type="text" name="edad" maxlength="2" data-rule-required="true" data-rule-number="true" data-rule-minlength="1" data-rule-maxlength="2" data-msg="Ingrese su edad" data-msg-minlength="Ingrese al menos un caracter" data-msg-maxlength="Ingrese a lo más dos caracteres" data-msg-number="Sólo números">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="url">URL:</label>
+            <div class="field">
+              <input id="url" type="url" name="url" data-rule-required="true" data-rule-url="true" data-msg="Ingrese su URL" data-msg-url="Ingrese una URL válida">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="ciudad">Ciudad:</label>
+            <div class="field">
+              <select id="ciudad" name="ciudad" data-rule-required="true" data-msg="Seleccione una ciudad">
+                <option value="">Seleccione una ciudad</option>
+                <option value="1">Santiago</option>
+                <option value="2">Lima</option>
+                <option value="3">Barranquilla</option>
+              </select>
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <label class="label" for="razon-social">Raz&oacute;n Social:</label>
+            <div class="field">
+              <input id="razon-social" type="text" name="razon-social" data-rule-required="true" data-rule-lettersonly="true" data-rule-minlength="5" data-msg="Ingrese la razón social" data-msg-lettersonly="Ingrese sólo letras" data-msg-minlength="Razón social inválida. Razón social debe tener al menos 5 caracteres">
+            </div><a class="view-code" href="#" title="Ver código"></a>
+          </div>
+          <div class="field-group">
+            <div class="field">
+              <input id="enviar" name="enviar" type="submit" value="Enviar">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script src="javascript/test.js">  </script>
+    <!--script(src="javascript/main.js")-->
+  </body>
+</html>

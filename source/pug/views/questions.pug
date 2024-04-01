@@ -1,0 +1,30 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps.steps--identity
+                        li.steps__item.is-active
+                            span.steps__text Preguntas Validación
+                        li.steps__item
+                            span.steps__text Validación SMS
+                .container
+                    .detail-steps.detail-steps--no-border
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange Preguntas de Validación
+                        .row.identity
+                            .col-sm-6.col-md-6
+                                p.identity__text Por seguridad vamos a realizar 3 preguntas de validación para comprobar que eres tú.
+                                .identity__image.identity__image--mobile
+                                    img(src="images/questions-img.png")
+                                .identity__button
+                                    a(href="questions-list.html" class="button button--orange") Empecemos
+                            .col-sm-6.col-md-6
+                                .identity__image.identity__image--desktop
+                                    img(src="images/questions-img.png")

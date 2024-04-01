@@ -1,0 +1,100 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps
+                        li.steps__item.is-active
+                            span.steps__text Recomendante
+                        li.steps__item
+                            span.steps__text Datos Personales
+                        li.steps__item
+                            span.steps__text Contacto
+                        li.steps__item
+                            span.steps__text Dirección
+                        li.steps__item
+                            span.steps__text Vista Preliminar
+                        li.steps__item
+                            span.steps__text Incorporación
+                .container
+                    .detail-steps
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange 
+                                        i.icon.icon-book
+                                        | Vista Preliminar
+                                    p.headline__description.headline__description--text
+                                        | María José, aquí el resumen de tus datos (si deseas cambiar tus datos presiona MODIFICAR)
+                        .row
+                            .col-md-12
+                                .summary
+                                    .summary__item
+                                        .row
+                                            .col-xs-8.col-md-9
+                                                h2.summary__title 1. Recomendante
+                                                .summary__content                                            
+                                                    span.summary__info.summary__info--code 0982427270
+                                                    span.summary__info.summary__info--name Maria de los Santos Campos Reategui
+                                            .col-xs-4.col-md-3
+                                                .summary__action
+                                                    a(href="recommended.html" class="button button--outlined") Modificar
+                                    .summary__item
+                                        .row
+                                            .col-xs-8.col-md-9
+                                                h2.summary__title 2. Datos Personales
+                                                .summary__content
+                                                    span.summary__info.summary__info--document-number 0982427270
+                                                    span.summary__info.summary__info--name Maria de los Santos Campos Reategui
+                                                    span.summary__info.summary__info--finger-code E111111111
+                                            .col-xs-4.col-md-3
+                                                .summary__action
+                                                    a(href="personal-information.html" class="button button--outlined") Modificar 
+                                    .summary__item
+                                        .row
+                                            .col-xs-8.col-md-9
+                                                h2.summary__title 3. Contacto
+                                                .summary__content
+                                                    span.summary__info.summary__info--cellphone 0982427270
+                                                    span.summary__info maria_882@gmail.com
+                                            .col-xs-4.col-md-3
+                                                .summary__action
+                                                    a(href="contact.html" class="button button--outlined") Modificar                                                                              
+                                    .summary__item
+                                        .row
+                                            .col-xs-8.col-md-9
+                                                h2.summary__title 4. Dirección                                        
+                                                .summary__content
+                                                    span.summary__info Av. Amazonas 788
+                                                    span.summary__info entre Calle loreto y san juan, en esquina
+                                                    span.summary__info 
+                                                        .row
+                                                            .col-xs-2.col-md-2 Provincia:
+                                                            .col-xs-1.col-md-1
+                                                            .col-xs-2.col-md-2.no-padding-text Esmeralda
+                                                    span.summary__info 
+                                                        .row
+                                                            .col-xs-2.col-md-2 Cantón:
+                                                            .col-xs-1.col-md-1
+                                                            .col-xs-2.col-md-2.no-padding-text Atacames
+                                                    span.summary__info 
+                                                        .row
+                                                            .col-xs-2.col-md-2 Parroquia:
+                                                            .col-xs-1.col-md-1
+                                                            .col-xs-2.col-md-2.no-padding-text Tonchigue
+                                                    span.summary__info 
+                                                        .row
+                                                            .col-xs-2.col-md-2 Barrio:
+                                                            .col-xs-1.col-md-1
+                                                            .col-xs-2.col-md-2.no-padding-text Same
+                                            .col-xs-4.col-md-3
+                                                .summary__action
+                                                    a(href="address.html" class="button button--outlined") Modificar                                                 
+                        .row
+                            .col-md-12
+                                .summary__button
+                                    a(href="incorporation.html" class="button button--orange") procesando                                 

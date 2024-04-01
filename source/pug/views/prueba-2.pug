@@ -1,0 +1,81 @@
+extends ../layout/layout
+
+block settings
+
+block content
+    .content
+        form.js-form-validate(method='get', action='')
+            fieldset
+                .field-group
+                    label.label(for='nombre') Nombre:
+                    .field
+                        input#nombre(type='text', name='nombre', data-rule-required='true', data-msg='Ingrese su nombre')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='apellido-paterno') Apellido paterno:
+                    .field
+                        input#apellido-paterno(type='text', name='apellido-paterno', data-rule-required='true', data-msg='Ingrese su apellido paterno')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='email') Email:
+                    .field
+                        input#email(type='email', name='email', data-rule-required='true', data-rule-email='true', data-rule-minlength='7', data-msg='Ingrese su email', data-msg-email='Ingrese un email válido', data-msg-minlength='Ingrese al menos siete caracteres')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='email-confirmacion') Confirmaci&oacute;n Email:
+                    .field
+                        input#email-confirmacion(type='email-confirmacion', name='email-confirmacion', data-rule-required='true', data-rule-equalto='#email', data-rule-email='true', data-rule-minlength='7', data-msg='Reingrese su email', data-msg-equalto='No coinciden los emails', data-msg-email='Ingrese un email válido', data-msg-minlength='Ingrese al menos siete caracteres')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='rut') RUT:
+                    .field
+                        input#rut(type='text', name='rut', data-rule-required='true', data-rule-rut='true', data-msg='Ingrese su RUT', data-msg-rut='Ingrese un RUT válido')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='rut-or-mail') RUT o Email:
+                    .field
+                        input#rut-or-mail(type='text', name='rut-or-mail', data-rule-required='true', data-rule-rutmail='true', data-msg='Ingrese su RUT o email', data-msg-rutmail='Ingrese un RUT o email válido')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='password') Password:
+                    .field
+                        input#password(type='password', name='password', maxlength='20', data-rule-required='true', data-rule-minlength='6', data-rule-maxlength='20', data-rule-alphanumeric='true', data-msg='Ingrese su clave', data-msg-minlength='Ingrese al menos seis caracteres', data-msg-maxlength='Ingrese a lo más 20 caracteres', data-msg-alphanumeric='Ingrese sólo número o letras')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='password-confirmacion') Confirmaci&oacute;n Password:
+                    .field
+                        input#password-confirmacion(type='password', name='password-confirmacion', maxlength='20', data-rule-required='true', data-rule-equalto='#password', data-rule-minlength='6', data-rule-maxlength='20', data-rule-alphanumeric='true', data-msg='Reingrese su clave', data-msg-equalto='No coinciden los passwords', data-msg-minlength='Ingrese al menos seis caracteres', data-msg-maxlength='Ingrese a lo más 20 caracteres', data-msg-alphanumeric='Ingrese sólo número o letras')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='fecha') Fecha:
+                    .field
+                        input#fecha(type='date', name='fecha', data-rule-required='true', min='1940-01-01', data-msg='Seleccione una fecha')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='edad') Edad:
+                    .field
+                        input#edad(type='text', name='edad', maxlength='2', data-rule-required='true', data-rule-number='true', data-rule-minlength='1', data-rule-maxlength='2', data-msg='Ingrese su edad', data-msg-minlength='Ingrese al menos un caracter', data-msg-maxlength='Ingrese a lo más dos caracteres', data-msg-number='Sólo números')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='url') URL:
+                    .field
+                        input#url(type='url', name='url', data-rule-required='true', data-rule-url='true', data-msg='Ingrese su URL', data-msg-url='Ingrese una URL válida')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='ciudad') Ciudad:
+                    .field
+                        select#ciudad(name='ciudad', data-rule-required='true', data-msg='Seleccione una ciudad')
+                            option(value='') Seleccione una ciudad
+                            option(value='1') Santiago
+                            option(value='2') Lima
+                            option(value='3') Barranquilla
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    label.label(for='razon-social') Raz&oacute;n Social:
+                    .field
+                        input#razon-social(type='text', name='razon-social', data-rule-required='true', data-rule-lettersonly='true', data-rule-minlength='5', data-msg='Ingrese la razón social', data-msg-lettersonly='Ingrese sólo letras', data-msg-minlength='Razón social inválida. Razón social debe tener al menos 5 caracteres')
+                    a.view-code(href='#', title='Ver código')
+                .field-group
+                    .field
+                        input#enviar(name='enviar', type='submit', value='Enviar')    
+    script(src="javascript/test.js")   

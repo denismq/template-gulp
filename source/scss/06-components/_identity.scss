@@ -1,0 +1,120 @@
+.identity{
+  &__text{
+    font-family: 'proxima_nova_alight';
+    font-size: 27px;
+    color: #444444;
+    @media (max-width: 480px){
+      font-size: 20px;
+      text-align: center;
+    }
+    span{
+      font-family: 'proxima_nova_abold';
+    }
+    &--size{
+      font-size: 18px;
+      font-family: 'proxima_nova_amedium';
+    }
+  }
+  &__message{
+    font-family: 'proxima_nova_amedium';
+    font-size: 16px;
+  }
+  &__image{
+    &--mobile{
+      display: none;
+      margin-top: 30px;
+      @media (max-width: 767px){
+        display: block;
+      }
+    }
+    &--desktop{
+      @media (max-width: 767px){
+        display: none;
+      }
+    }
+    img{
+      margin: 0 auto;
+    }
+  }
+  &__button{
+    @media (max-width: 767px){
+      text-align: center;
+    }
+    .button{
+      max-width: 300px;
+      width: 100%;
+      margin-top: 38px;
+    }
+  }
+  &__alert{
+    padding-top: 30px;
+    .alert-box{
+      position: relative;
+      float: none;
+      top: initial;
+      right: initial;
+      margin: 0 auto;
+      &__icon{
+        /*&--valid{
+          opacity: 1;
+          visibility: visible;
+          left: 0;
+        }*/
+        &--loading{
+          opacity: 1;
+          visibility: visible;
+          left: -32px;
+        }
+      }
+    }
+  }
+}
+
+.text-center{
+  text-align: center;
+}
+
+.code{
+  max-width: 215px;
+  width: 100%;
+  margin: 43px auto 0;
+  &__item{
+    display: inline-block;
+    margin: 0 5px;
+  }
+  &__input{
+    width: 40px;
+    border-bottom: 1px solid #979797;
+    font-size: 30px;
+    font-family: 'proxima_nova_alight';
+    text-align: center;
+    &.error{
+      border-bottom: 1px solid #F92D2D;
+    }
+    &.valid{
+      border-bottom: 1px solid #0CBF3C;
+    }
+  }
+}
+
+.countdown{
+  max-width: 410px;
+  width: 100%;
+  margin: 40px auto 0;
+  text-align: center;
+  padding: 0 1em;
+  .icon-clock{
+    color: $yanbal-color;
+    font-size: 50px;
+  }
+  span{
+    font-family: 'proxima_nova_amedium';
+    font-size: 16px;
+    display: block;
+  }
+}
+
+.not-active{
+  pointer-events: none;
+  opacity: 0.5;
+}

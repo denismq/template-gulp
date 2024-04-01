@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+  img{
+    max-width: 100%;
+    object-fit: cover;
+    width: 100vw;
+  }
+  &--padding-top{
+    padding-top: 30px;
+  }
+  &__inner{
+    position: relative;
+    .hero__img-desktop{
+      @media (max-width: 767px){
+        display: none;
+      }
+    }
+  }
+  &__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media (max-width: 767px){
+      position: static;
+      top: initial;
+      left: initial;
+      transform: none;
+      background-color: #ffdebe;
+      padding: 35px 15px;
+    }
+    .headline{
+      &__title{
+        color: $yanbal-color;
+      }
+    }
+  }
+  &__img-desktop{
+    //object-fit: cover;
+    //width: 100vw;
+    margin: 0 auto;
+  }
+  &__img-mobile{
+    display: none;
+    @media (max-width: 650px){
+      display: block;
+    }
+  }
+}

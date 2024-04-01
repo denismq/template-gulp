@@ -1,0 +1,18 @@
+extends ../layout/layout
+
+block settings
+
+block content
+    .content
+        form(name='myForm')
+        fieldset#gender(name='gender')
+            legend  Select Your Gender 
+            #radio
+            label(title='Select the Gender of the candicate ')  
+            label(for='male ')  Male 
+            input#male(type='radio', name='gender1', value='male')
+            label(for='female')  Female 
+            input#famale(type='radio', name='gender1', value='female')
+            // end radio class
+        input(type='submit')
+    script(src="javascript/test.js")     

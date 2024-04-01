@@ -1,0 +1,30 @@
+.error-messages{
+    border: 1px solid #F92D2D;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto 32px;
+    padding-top: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    padding-left: 66px;
+    position: relative;
+    border-radius: 2px;
+    &:before{
+        content: "\e901";
+        font-family: 'yanbal-icons';
+        font-size: 32px;
+        color: #F92D2D;
+        position: absolute;
+        top: 5px;
+        left: 17px;
+    }
+    &__text{
+        color: #F92D2D;
+        font-family: 'proxima_nova_amedium';
+        font-size: 14px;
+        margin-bottom: 10px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+}

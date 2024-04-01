@@ -1,0 +1,31 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps.steps--identity
+                        li.steps__item.is-active
+                            span.steps__text Preguntas Validación
+                        li.steps__item
+                            span.steps__text Validación SMS
+                .container
+                    .detail-steps.detail-steps--no-border
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange Validación sms
+                        .row.identity
+                            .col-sm-6.col-md-6
+                                p.identity__text Te enviaremos un SMS con un código único a tu celular <span>09 92766870,</span> lo recibes y lo confirmas aquí.
+                                .identity__image.identity__image--mobile
+                                    img(src="images/img-sms.png")
+                                .identity__button
+                                    a(href="verification-code.html" class="button button--orange") Enviar SMS
+                            .col-sm-6.col-md-6
+                                .identity__image.identity__image--desktop
+                                    img(src="images/img-sms.png")
+

@@ -1,0 +1,41 @@
+extends ../layout/layout
+
+block settings
+
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps
+                        li.steps__item.is-active
+                            span.steps__text Recomendante
+                        li.steps__item
+                            span.steps__text Datos Personales
+                        li.steps__item
+                            span.steps__text Contacto
+                        li.steps__item
+                            span.steps__text Dirección
+                        li.steps__item
+                            span.steps__text Vista Preliminar
+                        li.steps__item
+                            span.steps__text Incorporación
+                .container
+                    .detail-steps.detail-steps--no-border
+                        a(class="btn-back" href="contact.html") Volver
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange 
+                                        i.icon.icon-home
+                                        | Dirección
+                .map-container
+                    img(src="images/map-1.jpg", class="")
+    .c-modal
+        .c-modal__content
+            .c-modal__body.text-center
+                h2.c-modal__body-title.c-modal__body-title--center ups...
+                p.c-modal__body-description.
+                    No hemos encontrado tu dirección.
+                .c-modal__button
+                    a(href="preview.html" class="button button--orange") Ingresar dirección manualmente

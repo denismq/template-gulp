@@ -1,0 +1,60 @@
+extends ../layout/layout
+
+block settings
+
+block content
+   .content
+    .container 
+        .row 
+            .col-md-12
+                .c-form
+                    .c-form__image
+                    form.js-register
+                        .row
+                        h2.c-form__title Completa tus datos
+                        .col-md-6
+                            .c-form__row
+                                label Nombres
+                                input.form-control(type='text', name='firstname', placeholder='Ingrese sus nombres', value='')
+                        .col-md-6
+                            .c-form__row
+                                label Apellidos
+                                input.form-control(type='text', name='lastname', placeholder='Ingrese sus apellidos', value='')
+                        .col-md-6
+                            .c-form__row
+                                label Tel&eacute;fono celular
+                                input.form-control(type='text', name='cellphone', placeholder='Ingrese su numero telefonico', value='')
+                        .col-md-6
+                            .c-form__row
+                                label Correo electr&oacute;nico
+                                input.form-control(type='text', name='email', placeholder='Ingrese su correo electrónico', value='')
+                        .col-md-6.margin-bottom
+                            .c-form__row
+                                label(for='') Tus favoritos
+                                select.form-control(name='favorites')
+                                    option(value='', disabled='') Seleccione
+                                    option(value='pollo') Pollo
+                                    option(value='cerdo') Cerdo
+                                    option(value='embutidos') Embutidos
+                        .col-md-12
+                            .c-form__row
+                                label.c-control.c-control--checkbox
+                                    input(type='checkbox', name='terms')
+                                    .c-control__shape
+                                    | Acepto los&nbsp;
+                                    a(href='#terminos')  T&eacute;rminos y politicas de privacidad
+                        .col-md-12
+                            .c-form__row
+                                label.c-control.c-control--checkbox
+                                    input(type='checkbox', name='personal')
+                                    .c-control__shape
+                                    | Acepto el&nbsp;
+                                    a(href='#datos')  uso de datos personales
+                        .col-md-12
+                            .c-form__row.text-center
+                                button.c-button(type='submit') Registrarme
+                        .col-md-12
+                            .c-form__row
+                                p.note
+                                    | Aprovecha las mejores ofertas y descuentos en cerdo, congelados, embutidos y mucho m&aacute;s. No te pierdas de nada estos Cyberdays registr&aacute;ndote y obteniendo grandes descuentos exclusivos.                
+    script(src="javascript/test.js")   

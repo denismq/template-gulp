@@ -1,0 +1,53 @@
+.block{
+    text-align: center;
+    &__description{
+      font-family: 'proxima_nova_amedium';
+      font-size: 18px;
+      color: #444444;
+      margin-bottom: 60px;
+      @media (max-width: 480px){
+        font-size: 16px;
+      }
+    }
+    &__info{
+      @media (max-width: 768px){
+        border: 1px solid #CDCCCC;
+        padding: 20px;
+      }
+      &--no-border{
+        border: none;
+      }
+    }
+    &__text{
+      font-family: 'proxima_nova_amedium';
+      font-size: 16px;
+      color: #444444;
+      margin-bottom: 35px;
+      &--fontsize{
+        font-size: 25px;
+        @media (max-width: 768px){
+          font-size: 20px;
+        }
+      }
+    }
+    &__button{
+      padding-top: 25px;
+      @media (max-width: 768px){
+        margin-top: 30px;
+      }
+      &--buttons{
+        .button{
+          max-width: 300px;
+          width: 100%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-left: 32px;
+          margin-right: 32px;
+          @media (max-width: 480px){
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }

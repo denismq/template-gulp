@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" type="image/png" href="images/favicon/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--link(rel='stylesheet', href='css/index.css')-->
+    <title>Incorporación</title>
+  </head>
+  <body>
+    <!--main-->
+    <div class="content">
+      <section class="incorporate">
+        <div class="content-steps">
+          <div class="o-container">
+            <ul class="steps">
+              <li class="steps__item is-active"><span class="steps__text">Recomendante</span></li>
+              <li class="steps__item"><span class="steps__text">Datos Personales</span></li>
+              <li class="steps__item"><span class="steps__text">Contacto</span></li>
+              <li class="steps__item"><span class="steps__text">Dirección</span></li>
+              <li class="steps__item"><span class="steps__text">Vista Preliminar</span></li>
+              <li class="steps__item"><span class="steps__text">Incorporación</span></li>
+            </ul>
+          </div>
+          <div class="container">
+            <div class="detail-steps"><a class="btn-back" href="recommended.html">Volver</a>
+              <div class="row">
+                <div class="col-md-12">
+                  <header class="headline">
+                    <h1 class="headline__title headline__title--orange"> <i class="icon icon-profile"></i>Datos Personales</h1>
+                  </header>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="error-messages">
+                    <div class="error-messages__text">Por favor corrija los campos resaltados en rojo</div>
+                    <div class="error-messages__text">El número de documento ya se encuentra registrado en nuestro sistema (I100).</div>
+                    <div class="error-messages__text">El correo ingresado ya se encuentra registrado.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <form>
+                    <div class="c-form">
+                      <label class="c-form__description">Por favor indicanos tu tipo de documento de identidad:</label>
+                      <div class="c-form__row no-margin">
+                        <ul class="custom-input custom-input--border">
+                          <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                              <li class="custom-input__item custom-input__item--selection js-selection" data-option="cedula">
+                                <input type="radio" id="option-radio-1" name="option-radio">
+                                <label class="custom-input__label" for="option-radio-1">Cédula</label>
+                                <div class="check"></div>
+                                <div class="arrow-container"></div>
+                              </li>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                              <li class="custom-input__item custom-input__item--selection js-selection" data-option="cedula-extranjeria">
+                                <input type="radio" id="option-radio-2" name="option-radio">
+                                <label class="custom-input__label" for="option-radio-2">Cédula de Extranjería</label>
+                                <div class="check"></div>
+                                <div class="arrow-container"></div>
+                              </li>
+                            </div>
+                          </div>
+                        </ul>
+                      </div>
+                      <div class="c-form__document-type">
+                        <div class="c-form__document-item" data-document="cedula">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="c-form__row">
+                                <input class="c-form__input c-form__input--width c-form__input--value padding-label" type="text" id="" name="" maxlength="10">
+                                <label class="focus-label">Numero de Documento</label><span class="c-form__span">Ejemplo: 0987654321</span>
+                                <div class="alert-box">
+                                  <div class="alert-box__inner"><span class="alert-box__icon alert-box__icon--error"><i class="icon-close"></i></span><span class="alert-box__icon alert-box__icon--valid"><i class="icon-check"></i></span><span class="alert-box__icon alert-box__icon--loading"><i class="icon-update"></i></span></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="c-form__row">
+                                <input class="c-form__input c-form__input--width c-form__input--value padding-label" type="text" id="" name="" maxlength="10">
+                                <label class="focus-label">Codigo Dactilar</label><i class="icon icon-ask js-modal"></i><span class="c-form__span">Ejemplo: 1234567890                                                            </span>
+                                <div class="alert-box">
+                                  <div class="alert-box__inner"><span class="alert-box__icon alert-box__icon--error"><i class="icon-close"></i></span><span class="alert-box__icon alert-box__icon--valid"><i class="icon-check"></i></span><span class="alert-box__icon alert-box__icon--loading"><i class="icon-update"></i></span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h3 class="c-form__title">Nombres Completos</h3>
+                              <div class="c-form__row">
+                                <input class="c-form__input c-form__input--width c-form__input--value padding-label" type="text" id="" name="">
+                                <label class="focus-label">Nombres</label>
+                              </div>
+                              <div class="c-form__row">
+                                <input class="c-form__input c-form__input--width c-form__input--value padding-label" type="text" id="" name="">
+                                <label class="focus-label">Primer Apellido</label>
+                              </div>
+                              <div class="c-form__row">
+                                <input class="c-form__input c-form__input--width c-form__input--value padding-label" type="text" id="" name="">
+                                <label class="focus-label">Segundo Apellido (opcional)</label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <h3 class="c-form__title">Género</h3>
+                              <div class="c-form__row">
+                                <ul class="custom-input">
+                                  <div class="row">
+                                    <div class="col-xs-6 col-md-6">
+                                      <li class="custom-input__item">
+                                        <input type="radio" id="male" name="option-radio">
+                                        <label class="custom-input__label" for="male">Hombre</label>
+                                        <div class="check"></div>
+                                      </li>
+                                    </div>
+                                    <div class="col-xs-6 col-md-6">
+                                      <li class="custom-input__item">
+                                        <input type="radio" id="female" name="option-radio">
+                                        <label class="custom-input__label" for="female">Mujer</label>
+                                        <div class="check"></div>
+                                      </li>
+                                    </div>
+                                  </div>
+                                </ul>
+                              </div>
+                              <div class="c-form__row c-form__row--pt-57">
+                                <h3 class="c-form__title">Fecha de Nacimiento</h3>
+                                <div class="row">
+                                  <div class="col-xs-3 col-md-3 no-padding-right">
+                                    <div class="c-form__select"><i class="icon-arrow-down"></i>
+                                      <select class="c-form__input c-form__input--select" id="">
+                                        <option value>Dia</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-6 col-md-6">
+                                    <div class="c-form__select"><i class="icon-arrow-down"></i>
+                                      <select class="c-form__input c-form__input--select" id="">
+                                        <option value>Mes</option>
+                                        <option value>Enero</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-3 col-md-3 no-padding-left">
+                                    <div class="c-form__select"><i class="icon-arrow-down"></i>
+                                      <select class="c-form__input c-form__input--select" id="">
+                                        <option value>Año</option>
+                                        <option value="1900">1900                                                                                                                                                                                                       </option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="c-form__document-item" data-document="cedula-extranjeria">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="c-form__row c-form__row--num-doc">
+                                <input class="c-form__input c-form__input--width c-form__input--value" type="text" id="" name="">
+                                <label class="focus-label">Número de Documento</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h3 class="c-form__title">Nombres Completos</h3>
+                              <div class="c-form__row">
+                                <input class="c-form__input c-form__input--width c-form__input--value" type="text" id="" name="">
+                                <label class="focus-label">Nombres</label>
+                              </div>
+                              <div class="c-form__row">
+                                <input class="c-form__input c-form__input--width c-form__input--value" type="text" id="" name="">
+                                <label class="focus-label">Primer Apellido</label>
+                              </div>
+                              <div class="c-form__row">
+                                <input class="c-form__input c-form__input--width c-form__input--value" type="text" id="" name="">
+                                <label class="focus-label">Segundo Apellido (opcional)</label>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <h3 class="c-form__title">Género</h3>
+                              <div class="c-form__row">
+                                <ul class="custom-input">
+                                  <div class="row">
+                                    <div class="col-xs-6 col-md-6">
+                                      <li class="custom-input__item">
+                                        <input type="radio" id="male" name="option-radio">
+                                        <label class="custom-input__label" for="male">Hombre</label>
+                                        <div class="check"></div>
+                                      </li>
+                                    </div>
+                                    <div class="col-xs-6 col-md-6">
+                                      <li class="custom-input__item">
+                                        <input type="radio" id="female" name="option-radio">
+                                        <label class="custom-input__label" for="female">Mujer</label>
+                                        <div class="check"></div>
+                                      </li>
+                                    </div>
+                                  </div>
+                                </ul>
+                              </div>
+                              <div class="c-form__row c-form__row--pt-57">
+                                <h3 class="c-form__title">Fecha de Nacimiento</h3>
+                                <div class="row">
+                                  <div class="col-xs-3 col-md-3 no-padding-right">
+                                    <div class="c-form__select"><i class="icon-arrow-down"></i>
+                                      <select class="c-form__input c-form__input--select" id="">
+                                        <option value>Dia</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-6 col-md-6">
+                                    <div class="c-form__select"><i class="icon-arrow-down"></i>
+                                      <select class="c-form__input c-form__input--select" id="">
+                                        <option value>Mes</option>
+                                        <option value>Enero</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-xs-3 col-md-3 no-padding-left">
+                                    <div class="c-form__select"><i class="icon-arrow-down"></i>
+                                      <select class="c-form__input c-form__input--select" id="">
+                                        <option value>Año</option>
+                                        <option value="1900">1900</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="c-form__button c-form__button--margin-top c-form__button--next"><a class="button button--orange" href="contact.html">Sigamos</a></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="c-modal">
+      <div class="c-modal__content">
+        <div class="c-modal__btn-close"><i class="icon-close"></i></div>
+        <div class="c-modal__body text-center">
+          <h2 class="c-modal__body-title c-modal__body-title--center">código dactilar</h2>
+          <p class="c-modal__body-description">Al reverso de tu cédula de identidad podrás ubicar tu código dactilar:</p>
+          <div class="c-modal__body-image"><img src="images/img-code.png"></div>
+        </div>
+      </div>
+    </div>
+    <div class="prueba-mensajes">
+      <div class="alert-box">
+        <div class="alert-box__inner"><span class="alert-box__icon alert-box__icon--error"><i class="icon-close"></i></span><span class="alert-box__icon alert-box__icon--valid"><i class="icon-check"></i></span><span class="alert-box__icon alert-box__icon--loading"><i class="icon-update"></i></span></div>
+      </div>
+      <button class="prueba-error">Error</button>
+      <button class="prueba-valid">Valid</button>
+      <button class="prueba-loading">Loading</button>
+    </div>
+    <!--script(src="javascript/main.js")-->
+  </body>
+</html>

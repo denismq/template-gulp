@@ -1,0 +1,33 @@
+@mixin hover-background($color){
+  background-color: $color;
+  &:hover{
+    background-color: $color;
+  }
+}
+
+@mixin button-bg($bg) {
+  background-color: $bg;
+}
+
+@mixin button-bg-gradient($bg-gradient) {
+  background-image: $bg-gradient;
+}
+
+@mixin text-color($color) {
+  color: $color;
+}
+
+@mixin generic-list-text() {
+  position: relative;
+  top: -20px;
+  max-width: initial;
+  margin: 0 15px;
+  width: auto;
+  transform: none;
+}
+
+@mixin font-title($font-family, $font-size, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $color;
+}

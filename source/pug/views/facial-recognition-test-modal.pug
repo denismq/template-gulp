@@ -1,0 +1,36 @@
+extends ../layout/layout
+
+block settings
+    
+block content
+    .content
+        section.incorporate
+            .content-steps
+                .o-container
+                    ul.steps.steps--identity
+                        li.steps__item.visited
+                            span.steps__text Validación SMS
+                        li.steps__item.active
+                            span.steps__text Reconocimiento Facial
+                .container
+                    .detail-steps.detail-steps--no-border
+                        .row
+                            .col-md-12
+                                header.headline
+                                    h1.headline__title.headline__title--orange Reconocimiento Facial
+                        .row.identity.text-center
+                            .col-md-12
+                                .identity__image
+                                    img(src="images/prueba.png")
+                                .identity__button
+                                    a(href="#" class="button button--orange") Salir de Prueba
+    .c-modal.active
+        .c-modal__content.c-modal__content--message-1
+            .c-modal__body.text-center
+                h2.c-modal__body-title.c-modal__body-title--center ups...
+                p.c-modal__body-description.
+                    3 intentos incorrectos
+                p.c-modal__body-description.
+                    Por favor comunicate con tu Directora para terminar tu proceso de crédito.                    
+                .c-modal__button
+                    a(href="#" class="button button--orange") Ir a Yanbal.com

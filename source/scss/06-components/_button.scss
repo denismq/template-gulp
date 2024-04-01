@@ -1,0 +1,67 @@
+.button{
+  font-family: 'proxima_nova_abold';
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  width: 200px;
+  height: 50px;
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 50px;
+  border:1px solid $yanbal-color;
+  border-radius: 2px;
+  &--orange{
+    @include button-bg-gradient($yanbal-color-gradient);
+    @include text-color($white);
+    background-color: $yanbal-color;
+    &:hover {
+      background-image: none;
+      @include button-bg($yanbal-color);
+      @include text-color($white);
+    }
+    
+  }
+  &--outlined{
+    @include text-color($yanbal-color);
+    transition: all 0.5s;
+    &:hover,&:focus {
+      background-image: none;
+      @include button-bg($yanbal-color);
+      @include text-color($white);
+    }
+  }
+  &--black-outlined{
+    @include button-bg(transparent);
+    @include text-color($dark-gray);
+    border: 1px solid $dark-gray;
+  }
+  &--gray {
+    @include button-bg($gray-color);
+    @include text-color($yanbal-color);
+  }
+  &--width{
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    @media (max-width: 480px){
+      width: 100%;
+    }
+  }
+  &--mt-84{
+    margin-top: 84px;
+  }
+  &--mt-138{
+    margin-top: 138px;
+  }
+  .icon{
+    position: relative;
+    top: 6px;
+    font-size: 30px;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+}
